@@ -1,0 +1,230 @@
+body {
+    font-family: "Cairo", sans-serif;
+    background: linear-gradient(to bottom, #a8c878, #f0e68c);
+    margin: 0; /* لإزالة الهوامش الافتراضية */
+    padding: 0; /* لإزالة الحشو الافتراضي */
+}
+
+
+
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.card {
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.card img {
+    border-radius: 50%; /* لجعل الصورة دائرية */
+    width: 150px; /* تحديد عرض ثابت للصورة */
+    height: 150px; /* تحديد ارتفاع ثابت للصورة */
+    object-fit: cover; /* لضمان احتواء الصورة داخل الدائرة */
+    margin: 20px auto; /* لتوسيط الصورة أفقياً */
+
+}
+
+.card-content {
+    padding: 20px;
+    display: flex; /* تفعيل flexbox لتوسيط المحتوى عمودياً */
+    flex-direction: column; /* ترتيب العناصر عمودياً */
+    align-items: center; /* توسيط العناصر أفقياً */
+}
+
+.card-content h2 {
+    margin-top: 0;
+    text-align: center; /* توسيط العنوان داخل البطاقة */
+}
+
+.card-content a {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px; /* إضافة مسافة بين العنوان والزر */
+    transition: 0.3s linear;
+
+}
+
+.card-content a:hover {
+    background-color: #37d56f;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-links img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.up{
+    right: 10px;
+    bottom: 10px;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 3px;
+    
+}
+.up i {
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 90%; /* اجعل الحاوية تأخذ 90% من عرض الشاشة */
+  max-width: 600px; /* حدد أقصى عرض للحاوية */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* اجعل حقل الإدخال يأخذ 100% من عرض الحاوية */
+  margin-bottom: 10px;
+  box-sizing: border-box; /* تضمين الحواف والتباعد الداخلي في عرض العنصر */
+  transition: 0.3s linear;
+  border: 3px solid #f0e68c;
+  font-size: 18px;
+
+}
+
+#search-input:focus {
+    outline: none;
+    border: 3px solid #45a049;
+}
+#search-input:hover{
+    border: 3px solid #45a049;
+}
+#search-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* اجعل الزر يأخذ 100% من عرض الحاوية */
+  box-sizing: border-box;
+  transition: 0.3s linear;
+  font-size: 18px;
+}
+
+#results-list {
+  list-style: none;
+  padding: 0;
+  width: 100%; /* اجعل قائمة النتائج تأخذ 100% من عرض الحاوية */
+  box-sizing: border-box;
+}
+
+.search{
+    font-family: "Cairo", sans-serif;
+
+}
+
+#search-button:hover{
+    background-color: #146826;
+}
+
+.hint{
+    font-family: "Cairo", sans-serif;
+
+}
+
+#results-list li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+
+.card-content2 {
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+  
+  .card-conten2t:hover {
+    transform: translateY(-5px); /* رفع الكارد قليلاً عند التمرير */
+  }
+  
+  .card-content2 img {
+    border-radius: 50%; /* لجعل الصورة دائرية */
+    width: 150px; /* تحديد عرض ثابت للصورة */
+    height: 150px; /* تحديد ارتفاع ثابت للصورة */
+    object-fit: cover; /* لضمان احتواء الصورة داخل الدائرة */
+    margin: 20px auto; /* لتوسيط الصورة أفقياً */
+  }
+  
+  .card-content2 h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333; /* لون النص الرئيسي */
+  }
+  
+  .card-content2 p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666; /* لون النص الثانوي */
+    margin-bottom: 20px;
+  }
+  
+  .card-content2 a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* لون الزر */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-content2 a:hover {
+    background-color: #45a049; /* لون الزر عند التمرير */
+  }
